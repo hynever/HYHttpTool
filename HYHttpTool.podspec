@@ -90,7 +90,7 @@ Pod::Spec.new do |s|
   #
 
   # s.source_files  = "HYHttpTool/", "**/*.{h,m}"
-  s.source_files  = "HYHttpTool/", "Dir.entries('root_path').select{|x| ['.m','.h'].include?(File.extname(x))}"
+  s.source_files  = "HYHttpTool/", Dir.entries('root_path').select{|x| ['.m','.h'].include?(File.extname(x))}
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
